@@ -278,3 +278,54 @@ h2 {
 	color: #000;
 	text-align: center;
 }
+.different-item {
+	.item-count {
+		cursor: default;
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		background: $orange-color;
+		color: #fff;
+		font-size: 16px;
+		line-height: 32px;
+		text-align: center;
+		margin-bottom: 8px;
+	}
+	p {
+		font-size: 16px;
+		line-height: 32px;
+		color: #000;
+		&:last-of-child {
+			margin-bottom: 0;
+		}
+	}
+	&.top-item {
+		margin-bottom: 160px;
+	}
+}
+.different-wrapper {
+	position: relative;
+	.different-item-img {
+		max-width: 300px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+		img {
+			width: 100%;
+		}
+	}
+}
+.where-us {
+	h2 {
+		margin-bottom: 8px;
+		&+p {
+			font-family: 'blogger_sansmedium', sans-serif;
+			color: $green-color;
+			font-size: 20px;
+			line-height: 32px;
+			text-align: center;
+		}
+	}
+}

@@ -4,7 +4,17 @@
     font-weight: normal;
     font-style: normal; 
 
-    src: url('../fonts/blogger_sans-webfont.woff') format('woff'), url('../fonts/blogger_sans-webfont.ttf') format('truetype'), url('../fonts/blogger_sans-webfont.svg#blogger_sansregular') format('svg');
+    src: url('../fonts/blogger_sans.ttf');
+    src: url('../fonts/blogger_sans.woff') format('woff'), url('../fonts/blogger_sans.ttf') format('truetype'), url('../fonts/blogger_sans.svg#blogger_sansregular') format('svg');
+}
+
+@font-face
+{
+    font-family: 'blogger_sansmedium';
+    font-weight: normal;
+    font-style: normal; 
+
+    src: url('../fonts/Blogger Sans-Medium.ttf');
 }
 
 html,
@@ -3766,4 +3776,76 @@ h2
     text-align: center; 
 
     color: #000;
+}
+
+.different-item .item-count
+{
+    font-size: 16px;
+    line-height: 32px;
+
+    width: 32px;
+    height: 32px;
+    margin-bottom: 8px; 
+
+    cursor: default;
+    text-align: center;
+
+    color: #fff;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background: #f67c0d;
+}
+
+.different-item p
+{
+    font-size: 16px;
+    line-height: 32px;
+
+    color: #000;
+}
+.different-item p:last-of-child
+{
+    margin-bottom: 0;
+}
+
+.different-item.top-item
+{
+    margin-bottom: 160px;
+}
+
+.different-wrapper
+{
+    position: relative;
+}
+.different-wrapper .different-item-img
+{
+    position: absolute;
+    z-index: 1; 
+    top: 50%;
+    left: 50%;
+
+    max-width: 300px;
+
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+.different-wrapper .different-item-img img
+{
+    width: 100%;
+}
+
+.where-us h2
+{
+    margin-bottom: 8px;
+}
+.where-us h2 + p
+{
+    font-family: 'blogger_sansmedium', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+
+    text-align: center; 
+
+    color: #009688;
 }
