@@ -325,7 +325,68 @@ h2 {
 			color: $green-color;
 			font-size: 20px;
 			line-height: 32px;
+			max-width: 550px;
 			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 64px;
+		}
+	}
+	.circle-item {
+		margin-bottom: 64px;
+	}
+}
+.grey-section {
+	background: url(../img/pattern.jpg)repeat;
+}
+.quote-block {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	background: $green-color;
+	padding: 32px 104px;
+	color: #fff;
+	border-radius: 16px;
+	font-size: 20px;
+	line-height: 32px;
+	text-align: center;
+}
+.reason-item {
+	text-align: center;		
+	margin-bottom: 64px;
+}
+.reason-ite-icon {
+	width: 128px;
+	height: 128px;
+	border-radius: 50%;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 16px;
+	svg {
+		fill: $orange-color;
+	}
+}
+.reason-ite-name {		
+	font-size: 24px;
+	line-height: 40px;
+	font-family: 'blogger_sansmedium', sans-serif;
+	color: $green-color;
+}
+.item-list {
+	li {
+		font-size: 16px;
+		line-height: 32px;
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			background: url(../img/check-solid.svg)no-repeat center/cover;
+			margin-right: 10px;
 		}
 	}
 }

@@ -3845,7 +3845,105 @@ h2
     font-size: 20px;
     line-height: 32px;
 
-    text-align: center; 
+    max-width: 550px;
+    margin-right: auto;
+    margin-bottom: 64px; 
+    margin-left: auto;
+
+    text-align: center;
 
     color: #009688;
+}
+
+.where-us .circle-item
+{
+    margin-bottom: 64px;
+}
+
+.grey-section
+{
+    background: url(../img/pattern.jpg) repeat;
+}
+
+.quote-block
+{
+    font-size: 20px;
+    line-height: 32px;
+
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 32px 104px;
+
+    text-align: center; 
+
+    color: #fff;
+    -webkit-border-radius: 16px;
+            border-radius: 16px;
+    background: #009688;
+}
+
+.reason-item
+{
+    margin-bottom: 64px; 
+
+    text-align: center;
+}
+
+.reason-ite-icon
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    width: 128px;
+    height: 128px;
+    margin-right: auto;
+    margin-bottom: 16px; 
+    margin-left: auto;
+
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background: #fff;
+
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+.reason-ite-icon svg
+{
+    fill: #f67c0d;
+}
+
+.reason-ite-name
+{
+    font-family: 'blogger_sansmedium', sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+
+    color: #009688;
+}
+
+.item-list li
+{
+    font-size: 16px;
+    line-height: 32px;
+}
+.item-list li:before
+{
+    display: inline-block;
+
+    width: 16px;
+    height: 16px;
+    margin-right: 10px; 
+
+    content: '';
+
+    background: url(../img/check-solid.svg) no-repeat center/cover;
 }
