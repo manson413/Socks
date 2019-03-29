@@ -7,11 +7,11 @@ $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1248px);
 
 $gutter: $grid-gutter-width;
 @import 'fonts';
-//@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import 'reset';
 
-@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
-@import '../../node_modules/bootstrap/scss/variables';
+//@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+//@import '../../node_modules/bootstrap/scss/variables';
 
 
 body {
@@ -185,6 +185,14 @@ h2 {
 	text-transform: uppercase;
 	color: $orange-color;
 	margin-bottom: 64px;
+	svg {
+		display: inline-block;
+		fill: $green-color;
+		position: relative;
+		top: -9px;
+		width: 32px;
+		height: 32px;
+	}
 }
 .first-screen-content {
 	display: flex;
@@ -378,7 +386,7 @@ h2 {
 		fill: $orange-color;
 	}
 }
-.reason-ite-name {		
+.reason-item-name {		
 	font-size: 24px;
 	line-height: 40px;
 	font-family: 'blogger_sansmedium', sans-serif;
@@ -573,6 +581,19 @@ h2 {
 		margin-bottom: 0;
 	}
 }
+.brand-models {
+	.img-item {
+		img {
+			width: 100%;
+			max-width: 284px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.row {
+		margin-bottom: 128px;
+	}
+}
 .brand-item {
 	width: 100%;
 	height: 100px;
@@ -583,5 +604,54 @@ h2 {
 	img {
 		max-width: 100%;
 		max-height: 100%;
+	}
+}
+.brand-models-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	.reason-item-name {
+		font-size: 20px;
+		line-height: 32px;
+		margin-bottom: 8px;
+	}
+}
+.green-text {
+	color: $green-color;
+}
+.brand-models-wrapper {
+	.green-text {
+		font-size: 20px;
+		line-height: 32px;
+		text-align: center;
+		margin-bottom: 64px;
+	}
+}
+.title-icon {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	height: 100%;
+	&>img {
+		margin-bottom: 24px;
+	}
+}
+.italic-text {
+	font-family: 'blogger_sansitalic';
+}
+.free-receive {
+	.reason-item {
+		margin-bottom: 0;
+	}
+}
+.brands-logo-wrapper {
+	padding-top: 128px;
+	.green-text {
+		font-size: 20px;
+		line-height: 32px;
+		text-align: center;
 	}
 }
