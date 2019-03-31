@@ -13,11 +13,16 @@
 		<meta name="msapplication-navbutton-color" content="#F67C0D">
 		<meta name="apple-mobile-web-app-capable" content="#F67C0D">
 		<link href="css/slick.css" rel="stylesheet">
+		<link href="css/animate.min.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
 		<link rel="icon" href="img/favicon/favicon.ico">
 	</head>
 	
-	<body>
+	<body class="fixed">
+		<div class="preloader-wrapper">
+			<img src="img/spinner.gif" alt="">
+		</div>
+		<!-- /.preloader-wrapper -->
 
 <div class="container-fluid">
 
@@ -26,12 +31,12 @@
 			<header>
 				<a href="/" class="logo" alt="Raduga-loom" title="Raduga-loom">Raduga-loom</a>
 				<ul class="header-contacts-list">
-					<li><a href="mailto:radugaloom@mail.ru">
+					<li class="mail-link"><a href="mailto:radugaloom@mail.ru">
 						<svg class="icon-sprite svg-icon">
 							<use xlink:href="img/symbol_sprite.svg#icon-envelope-regular"></use>
 						</svg>
-					radugaloom@mail.ru</a></li>
-					<li><a href="tel:+88007005568">
+					radugaloom@mail.ru</a></li> 
+					<li class="phone-link"><a href="tel:+88007005568">
 						<svg class="icon-sprite svg-icon">
 							<use xlink:href="img/symbol_sprite.svg#icon-phone-solid"></use>
 						</svg>
@@ -54,10 +59,10 @@
 						</ul>
 						<!-- /.check-list -->
 						<p>Защищая себя от травм, вы получаете кайф от тренировки!</p>
-						<button type="button" class="btn green-btn">Подробнее</button>
+						<button type="button" class="btn green-btn" data-toggle="modal" data-target="#connect-modal">Подробнее</button>
 					</div>
 					<div class="col-md-12 col-lg-4">
-						<div class="first-screen-img">
+						<div class="first-screen-img" data-tilt>
 							<img src="img/first-screen-sock.jpg" alt="">
 						</div>
 					</div>
@@ -72,32 +77,32 @@
 
 <main>
 
-	<section class="offer-to-by section-padding">
+	<section class="offer-to-by section-padding" id="about-us">
 		<div class="container">
 			<h2>Что мы предлагаем купить?</h2>
 
 			<div class="row">
-				<div class="col-md-6 col-lg-4">
-					<div class="circle-item">
-						<div class="circle-item-img">
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<div class="circle-item wow fadeInUp" data-wow-delay="0.1s">
+						<div data-tilt class="circle-item-img">
 							<img src="img/by1.jpg" alt="">
 						</div>
 						<div class="circle-item-name">Носки для йоги</div>
 					</div>
 					<!-- /.circle-item -->
 				</div>
-				<div class="col-md-6 col-lg-4">
-					<div class="circle-item">
-						<div class="circle-item-img">
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<div class="circle-item wow fadeInUp" data-wow-delay="0.3s">
+						<div data-tilt class="circle-item-img">
 							<img src="img/by2.jpg" alt="">
 						</div>
 						<div class="circle-item-name">Носки для прыжков на батуте</div>
 					</div>
 					<!-- /.circle-item -->
 				</div>
-				<div class="col-md-12 col-lg-4">
-					<div class="circle-item">
-						<div class="circle-item-img">
+				<div class="col-sm-12 col-md-6 offset-md-3 col-lg-4 offset-lg-0">
+					<div class="circle-item wow fadeInUp" data-wow-delay="0.5s">
+						<div data-tilt class="circle-item-img">
 							<img src="img/by3.jpg" alt="">
 						</div>
 						<div class="circle-item-name">Носки для спорта</div>
@@ -117,28 +122,28 @@
 			<div class="different-wrapper">
 				<div class="row">
 					<div class="col-sm-12 col-md-6 col-lg-4 ">
-						<div class="different-item top-item">
+						<div class="wow fadeInUp different-item top-item" data-wow-delay="0.3s">
 							<div class="item-count">1</div>
 							<p>В меру эластичная резинка medium не слишком тугая и не слишком слабая, поэтому носок не спадает и не сдавливает вены — золотая середина</p>
 						</div>
 						<!-- /.different-item -->
 					</div>
 					<div class="col-sm-12 col-md-6 col-lg-4 offset-lg-4">
-						<div class="different-item top-item">
+						<div class="wow fadeInUp different-item top-item" data-wow-delay="0.5s">
 							<div class="item-count">2</div>
 							<p>Плотная анатомическая пятка обтягивает стопу, создавая комфорт при носке изделия</p>
 						</div>
 						<!-- /.different-item -->
 					</div>
 					<div class="col-sm-12 col-md-6 col-lg-4">
-						<div class="different-item">
+						<div class="wow fadeInUp different-item" data-wow-delay="0.7s">
 							<div class="item-count">3</div>
 							<p>В меру эластичная резинка medium не слишком тугая и не слишком слабая, поэтому носок не спадает и не сдавливает вены — золотая середина</p>
 						</div>
 						<!-- /.different-item -->
 					</div>
 					<div class="col-sm-12 col-md-6 col-lg-4 offset-lg-4">
-						<div class="different-item">
+						<div class="wow fadeInUp different-item" data-wow-delay="0.9s">
 							<div class="item-count">4</div>
 							<p>След имеет плотную структуру за счет тройной вязки, поэтому изделие практически не стирается при повышенных спортивных нагрузках</p>
 						</div>
@@ -146,8 +151,8 @@
 					</div>
 				</div>
 
-				<div class="different-item-img">
-					<img src="img/different-img.png" alt="">
+				<div class=" different-item-img" >
+					<img class="wow fadeInUp" data-wow-delay="0.1s" src="img/different-img.png" alt="">
 				</div>
 
 			</div>			
@@ -163,8 +168,8 @@
 
 			<div class="row">
 				<div class="col-sm-12 col-md-6 col-lg-4">
-					<div class="circle-item">
-						<div class="circle-item-img">
+					<div class="wow fadeInUp circle-item" data-wow-delay="0.1s">
+						<div data-tilt class="circle-item-img">
 							<img src="img/where-img1.jpg" alt="">
 						</div>
 						<div class="circle-item-name">Фитнес</div>
@@ -172,8 +177,8 @@
 					<!-- /.circle-item -->
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-4">
-					<div class="circle-item">
-						<div class="circle-item-img">
+					<div class="wow fadeInUp circle-item" data-wow-delay="0.2s">
+						<div data-tilt class="circle-item-img">
 							<img src="img/where-img2.jpg" alt="">
 						</div>
 						<div class="circle-item-name">Танцы</div>
@@ -181,8 +186,8 @@
 					<!-- /.circle-item -->
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-4">
-					<div class="circle-item">
-						<div class="circle-item-img">
+					<div class="wow fadeInUp circle-item" data-wow-delay="0.3s">
+						<div data-tilt class="circle-item-img">
 							<img src="img/where-img3.jpg" alt="">
 						</div>
 						<div class="circle-item-name">Пилатес</div>
@@ -190,8 +195,8 @@
 					<!-- /.circle-item -->
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-4">
-					<div class="circle-item">
-						<div class="circle-item-img">
+					<div class="wow fadeInUp circle-item" data-wow-delay="0.4s">
+						<div data-tilt class="circle-item-img">
 							<img src="img/where-img4.jpg" alt="">
 						</div>
 						<div class="circle-item-name">Ритмическая гимнастика</div>
@@ -199,8 +204,8 @@
 					<!-- /.circle-item -->
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-4">
-					<div class="circle-item">
-						<div class="circle-item-img">
+					<div class="wow fadeInUp circle-item" data-wow-delay="0.5s">
+						<div data-tilt class="circle-item-img">
 							<img src="img/where-img5.jpg" alt="">
 						</div>
 						<div class="circle-item-name">Детский сад и школа</div>
@@ -208,8 +213,8 @@
 					<!-- /.circle-item -->
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-4">
-					<div class="circle-item">
-						<div class="circle-item-img">
+					<div class="wow fadeInUp circle-item" data-wow-delay="0.6s">
+						<div data-tilt class="circle-item-img">
 							<img src="img/where-img6.jpg" alt="">
 						</div>
 						<div class="circle-item-name">Дом</div>
@@ -233,7 +238,7 @@
 			<div class="row">
 
 				<div class="col-sm-12 col-md-6 col-lg-4">
-					<div class="reason-item">
+					<div class="wow fadeInUp reason-item" data-wow-delay="0.1s">
 						<div class="reason-ite-icon">
 							<img src="img/svg/reason1.svg" alt="">
 						</div>
@@ -249,7 +254,7 @@
 				</div>
 
 				<div class="col-sm-12 col-md-6 col-lg-4">
-					<div class="reason-item">
+					<div class="wow fadeInUp reason-item" data-wow-delay="0.2s">
 						<div class="reason-ite-icon">
 							<img src="img/svg/reason2.svg" alt="">
 						</div>
@@ -264,7 +269,7 @@
 				</div>
 
 				<div class="col-sm-12 col-md-6 col-lg-4">
-					<div class="reason-item">
+					<div class="wow fadeInUp reason-item" data-wow-delay="0.3s">
 						<div class="reason-ite-icon">
 							<img src="img/svg/reason3.svg" alt="">
 						</div>
@@ -278,7 +283,7 @@
 				</div>
 
 				<div class="col-sm-12 col-md-6 col-lg-4">
-					<div class="reason-item">
+					<div class="wow fadeInUp reason-item" data-wow-delay="0.4s">
 						<div class="reason-ite-icon">
 							<img src="img/svg/reason4.svg" alt="">
 						</div>
@@ -292,7 +297,7 @@
 				</div>
 
 				<div class="col-sm-12 col-md-6 col-lg-4">
-					<div class="reason-item">
+					<div class="wow fadeInUp reason-item" data-wow-delay="0.5s">
 						<div class="reason-ite-icon">
 							<img src="img/svg/reason5.svg" alt="">
 						</div>
@@ -306,7 +311,7 @@
 				</div>
 
 				<div class="col-sm-12 col-md-6 col-lg-4">
-					<div class="reason-item">
+					<div class="wow fadeInUp reason-item" data-wow-delay="0.6s">
 						<div class="reason-ite-icon">
 							<img src="img/svg/reason6.svg" alt="">
 						</div>
@@ -320,7 +325,7 @@
 				</div>
 
 				<div class="col-sm-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
-					<div class="reason-item">
+					<div class="wow fadeInUp reason-item" data-wow-delay="0.7s">
 						<div class="reason-ite-icon">
 							<img src="img/svg/reason7.svg" alt="">
 						</div>
@@ -346,7 +351,7 @@
 			<div class="row">
 
 				<div class="col-sm-12 col-md-6">
-					<div class="advantage-item">
+					<div class="wow fadeInUp advantage-item" data-wow-delay="0.1s">
 						<div class="advantage-item-logo">
 							<img src="img/svg/advantage1.svg" alt="">
 						</div>
@@ -356,7 +361,7 @@
 				</div>
 
 				<div class="col-sm-12 col-md-6">
-					<div class="advantage-item">
+					<div class="wow fadeInUp advantage-item" data-wow-delay="0.2s">
 						<div class="advantage-item-logo">
 							<img src="img/svg/advantage2.svg" alt="">
 						</div>
@@ -366,7 +371,7 @@
 				</div>
 
 				<div class="col-sm-12 col-md-6">
-					<div class="advantage-item">
+					<div class="wow fadeInUp advantage-item" data-wow-delay="0.3s">
 						<div class="advantage-item-logo">
 							<img src="img/svg/advantage3.svg" alt="">
 						</div>
@@ -376,7 +381,7 @@
 				</div>
 
 				<div class="col-sm-12 col-md-6">
-					<div class="advantage-item">
+					<div class="wow fadeInUp advantage-item" data-wow-delay="0.4s">
 						<div class="advantage-item-logo">
 							<img src="img/svg/advantage4.svg" alt="">
 						</div>
@@ -386,7 +391,7 @@
 				</div>
 
 				<div class="col-sm-12 col-md-6 offset-md-3">
-					<div class="advantage-item">
+					<div class="wow fadeInUp advantage-item" data-wow-delay="0.5s">
 						<div class="advantage-item-logo">
 							<img src="img/svg/advantage5.svg" alt="">
 						</div>
@@ -407,7 +412,7 @@
 			<h2>Надежная защита от травм</h2>
 			<p>Купить нескользящие носки означает решить <span class="orange-text">три ключевые задачи</span> для защиты ног на тренировках.</p>
 
-			<div class="row">
+			<div class="wow fadeInUp row" data-wow-delay="0.1s">
 				<div class="col-sm-12 col-md-6">
 
 					<div class="safe-item">
@@ -423,7 +428,7 @@
 				</div>				
 			</div>
 
-			<div class="row">
+			<div class="wow fadeInUp row" data-wow-delay="0.2s">
 				<div class="d-none d-md-block col-md-6">
 					<div class="safe-item">
 						<div class="safe-item-img" style="background-image: url(img/safe-img2.jpg)"></div>
@@ -439,7 +444,7 @@
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="wow fadeInUp row" data-wow-delay="0.1s">
 				<div class="col-sm-12 col-md-6">
 
 					<div class="safe-item">
@@ -513,7 +518,7 @@
 					</div>
 					<div class="col-md-12 col-lg-6">
 						<p>На протяжении 3 лет мы продаем качественные нескользящие носки, а также другие полезные товары. Перейдя по ссылке на сайт магазина, вы можете более детально ознакомиться со всем ассортиментом продукции.</p>
-						<p>Мы постоянно двигаемся вперед и регулярно расширяем витрину новыми товарами. За последний год были добавлены 323 позиции, 56 из которых — спортивные носки с нескользящей подошвой.</p>
+						<p>Мы постоянно двигаемся вперед и регулярно расширяем витрину новыми товарами. За последний год были добавлены 323 позиции, 56 из которых — <span>спортивные носки с нескользящей подошвой</span>.</p>
 					</div>
 				</div>
 			</div>
@@ -592,7 +597,7 @@
 	<section class="brand-models grey-section section-padding">
 		<div class="container">
 			<h2>Разработка моделей с брендовым логотипом</h2> 
-			<div class="row">
+			<div class="row brand-models-row">
 				<div class="col-sm-12 col-md-6 col-lg-4">
 					<div class="brand-models-item">
 						<div class="reason-item-name text-center">Изготовление носков для батута по вашему макету и с вашим логотипом.</div>
@@ -672,7 +677,7 @@
 
 			<div class="row">
 				<div class="col-sm-12 col-md-6 col-lg-4">
-					<div class="reason-item">
+					<div class="reason-item wow fadeInUp" data-wow-delay="0.1s">
 						<div class="reason-ite-icon">
 							<img src="img/svg/free1.svg" alt="">
 						</div>
@@ -685,7 +690,7 @@
 					<!-- /.reason-item -->
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-4">
-					<div class="reason-item">
+					<div class="reason-item wow fadeInUp" data-wow-delay="0.2s">
 						<div class="reason-ite-icon">
 							<img src="img/svg/free2.svg" alt="">
 						</div>
@@ -698,7 +703,7 @@
 					<!-- /.reason-item -->
 				</div>
 				<div class="col-sm-12 col-md-6 offset-md-3 col-lg-4 offset-lg-0">
-					<div class="reason-item">
+					<div class="reason-item wow fadeInUp" data-wow-delay="0.3s">
 						<div class="reason-ite-icon">
 							<img src="img/svg/free3.svg" alt="">
 						</div>
@@ -714,8 +719,41 @@
 
 			<div class="brands-logo-wrapper">
 				<div class="row">
-					<div class="col-sm-12 col-md-12 offset-md-1 col-lg-8 offset-lg-2">
+					<div class="col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
 						<div class="green-text">Отправка вашего заказа осуществляется по всей территории России в течение 1-5 дней в&nbsp;зависимости от расстояния и службы доставки.</div>
+					</div>
+				</div>
+
+				<div class="row delivery-wrapper">
+					<div class="col-sm-12 col-md-6 col-lg-4">
+						<div class="delivery-item">
+							<img src="img/delivery1.jpg" alt="">
+						</div>
+						<!-- /.delivery-item -->
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4">
+						<div class="delivery-item">
+							<img src="img/delivery2.jpg" alt="">
+						</div>
+						<!-- /.delivery-item -->
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4">
+						<div class="delivery-item">
+							<img src="img/delivery3.jpg" alt="">
+						</div>
+						<!-- /.delivery-item -->
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4">
+						<div class="delivery-item">
+							<img src="img/delivery4.jpg" alt="">
+						</div>
+						<!-- /.delivery-item -->
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 offset-lg-2">
+						<div class="delivery-item">
+							<img src="img/delivery5.jpg" alt="">
+						</div>
+						<!-- /.delivery-item -->
 					</div>
 				</div>
 				
@@ -740,12 +778,61 @@
 		</footer>
 
 		<!-- modals -->
-		
+		<div class="modal fade" id="connect-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Заполните поля для связи</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form action="/" id="contactForm">
+							<div class="input-block">
+								<label>Ваше имя</label>
+								<input type="text" class="form-control send-input" name="name">
+								<span class="error-text">Заполните это поле</span>
+							</div>
+							<div class="input-block">
+								<label>Ваш телефон</label>
+								<input type="text" class="form-control send-input" name="phone">
+								<span class="error-text">Заполните это поле</span>
+							</div>
+							<input type="button" class="btn green-btn send-contacts-btn" value="Отправить">
+						</form>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+
+		<div class="modal fade" id="thanks-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">	
+					<h5 class="modal-title">Ваши данные отправлены</h5>					
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body text-center">
+						Спасибо!
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
 		<!-- </modals -->
 
 	<script src="js/svg4everybody.min.js"></script>
 	<script>svg4everybody();</script>
+	
 	<script src="js/jquery.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/tilt.jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/slick.min.js"></script> 
 	<script src="js/main.js"></script>

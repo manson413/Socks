@@ -88,6 +88,22 @@ input::-webkit-search-results-decoration {
 	display: none;
 }
 
+.preloader-wrapper {
+	width: 100vw;
+	height: 100vh;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		width: 50px;
+	}
+}
+
+.fixed {
+	overflow: hidden;
+}
+
 img, svg {
 	display: block;
 }
@@ -177,6 +193,7 @@ h1 {
 	color: $orange-color;
 	letter-spacing: 1px;
 	margin: 0;
+	font-family: 'blogger_sansmedium', sans-serif;
 }
 h2 {
 	font-size: 32px;
@@ -226,7 +243,7 @@ h2 {
 		&:before {
 			content: '';
 			position: absolute;
-			top: 0;
+			top: 3px;
 			left: 0;
 			display: inline-block;
 			width: 16px;
@@ -571,6 +588,9 @@ h2 {
 		font-size: 20px;
 		line-height: 32px;
 		margin-bottom: 32px;
+		span {
+			font-family: 'blogger_sansmedium', sans-serif;
+		}
 		&:last-child {
 			margin-bottom: 0;
 		}
@@ -653,5 +673,51 @@ h2 {
 		font-size: 20px;
 		line-height: 32px;
 		text-align: center;
+		margin-bottom: 64px;
 	}
 }
+.delivery-wrapper {
+	margin-bottom: 64px;
+}
+.delivery-item {
+	margin-bottom: 64px;
+	img {
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.input-block {
+	margin-bottom: 16px;
+	padding-bottom: 12px;
+	position: relative;
+	.error-text {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		font-size: 12px;
+		line-height: 12px;
+		color: red;
+		display: none;
+	}
+	&.error {
+		.send-input {
+			border: 1px solid red;			
+		}
+		.error-text {
+			display: inline-block;
+		}
+		
+	}
+}
+.modal-title {
+	font-size: 20px;
+}
+form {
+	.btn.green-btn:focus {
+		box-shadow: 1px 1px 15px rgba($green-color, .9);
+	}
+}
+
+@import 'media';
