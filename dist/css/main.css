@@ -13235,7 +13235,6 @@ h2 svg
 }
 .where-us h2 + p
 {
-    font-family: 'blogger_sansmedium', sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 32px;
@@ -13318,8 +13317,8 @@ h2 svg
 
 .reason-item-name
 {
-    font-family: 'blogger_sansmedium', sans-serif;
     font-size: 24px;
+    font-weight: 500;
     line-height: 40px;
 
     color: #009688;
@@ -13392,8 +13391,8 @@ h2 svg
 }
 .safe h2 + p
 {
-    font-family: 'blogger_sansmedium', sans-serif;
     font-size: 20px;
+    font-weight: 500;
     line-height: 32px;
 
     max-width: 550px;
@@ -13598,7 +13597,7 @@ h2 svg
 }
 .green-section p span
 {
-    font-family: 'blogger_sansmedium', sans-serif;
+    font-weight: 500;
 }
 .green-section p:last-child
 {
