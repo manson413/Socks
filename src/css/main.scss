@@ -6,7 +6,7 @@ $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1300px);
 $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1248px);
 
 $gutter: $grid-gutter-width;
-@import 'fonts';
+//@import 'fonts';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import 'reset';
 
@@ -20,7 +20,7 @@ body {
 	font-size: 16px;
 	line-height: 24px;
 	background-color: #fff;
-	font-family: 'blogger_sansregular', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 html, body {
@@ -188,12 +188,12 @@ header {
 	}
 }
 h1 {
-	font-size: 48px;
+	font-size: 44px;
 	line-height: 80px;
 	color: $orange-color;
 	letter-spacing: 1px;
 	margin: 0;
-	font-family: 'blogger_sansmedium', sans-serif;
+	font-weight: 700;	
 }
 h2 {
 	font-size: 32px;
@@ -207,7 +207,7 @@ h2 {
 		display: inline-block;
 		fill: $green-color;
 		position: relative;
-		top: -9px;
+		top: -3px;
 		width: 32px;
 		height: 32px;
 	}
@@ -664,7 +664,7 @@ h2 {
 	}
 }
 .italic-text {
-	font-family: 'blogger_sansitalic';
+	font-style: italic;
 }
 .free-receive {
 	.reason-item {
