@@ -198,6 +198,7 @@ h1 {
 h2 {
 	font-size: 32px;
 	line-height: 52px;
+	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
 	color: $orange-color;
@@ -308,6 +309,7 @@ h2 {
 .circle-item-name {
 	font-size: 24px;
 	line-height: 40px;
+	font-weight: bold;
 	color: #000;
 	text-align: center;
 }
@@ -327,6 +329,7 @@ h2 {
 	p {
 		font-size: 16px;
 		line-height: 32px;
+		font-weight: 600;
 		color: #000;
 		&:last-of-child {
 			margin-bottom: 0;
@@ -358,6 +361,7 @@ h2 {
 			color: $green-color;
 			font-size: 20px;
 			line-height: 32px;
+			font-weight: 600;
 			max-width: 550px;
 			text-align: center;
 			margin-left: auto;

@@ -13013,6 +13013,7 @@ h1
 h2
 {
     font-size: 32px;
+    font-weight: bold;
     line-height: 52px;
 
     margin-bottom: 64px; 
@@ -13190,6 +13191,7 @@ h2 svg
 .circle-item-name
 {
     font-size: 24px;
+    font-weight: bold;
     line-height: 40px;
 
     text-align: center; 
@@ -13218,6 +13220,7 @@ h2 svg
 .different-item p
 {
     font-size: 16px;
+    font-weight: 600;
     line-height: 32px;
 
     color: #000;
@@ -13262,6 +13265,7 @@ h2 svg
 {
     font-family: 'blogger_sansmedium', sans-serif;
     font-size: 20px;
+    font-weight: 600;
     line-height: 32px;
 
     max-width: 550px;
